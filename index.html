@@ -1,0 +1,150 @@
+<!DOCTYPE html> 
+ <html lang="en" class="bg-indigo-50 h-full overflow-x-hidden"> 
+ <head> 
+ 	 <meta charset="UTF-8"> 
+ 	 <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+ 	 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ 	 <link rel="stylesheet" href="./build/style.css"> 
+	 <link rel="stylesheet" href="./src/style.css">
+ 	 <title>LazyLegs</title> 
+ </head> 
+ <body class="bg-indigo-50 h-screen font-mono text-blue-950"> 
+	<!-- Navbar -->
+	<div class="navbar hover:bg-blue-950 hover:text-indigo-100 duration-200 ease-initial">
+		<div class="navbar-start">
+		  <a class="btn btn-ghost text-xl">LazyLegs</a>
+		</div>
+		<div class="navbar-end justify-items-end">
+		  <ul class="grid grid-flow-col grid-row-2 gap-4 m-4">
+			<li><a href="#footer">Contact</a></li>
+			<li><a href="#about">About</a></li>
+		  </ul>
+		</div>
+	  </div>
+
+	  <div class="grid grid-cols-[1fr_auto] gap-4 mt-10 h-full justify-items-center">
+
+		<!-- Scrollable Left Section -->
+		<section id="left-scroll"
+		  class="overflow-y-scroll h-full px-8 snap-y snap-mandatory pr-2 scrollbar-hide w-full sticky left-40">
+		  <div class="h-screen snap-start flex items-center">
+			<div>
+			  <p class="text-6xl word-wrap w-5/8">Lazy to Recieve your package?</p>
+			  <p class="text-2xl m-2">LazyLegs got you covered.</p>
+			</div>
+		  </div>
+	
+		  <div class="h-screen snap-start flex items-center">
+			<div>
+			  <p class="text-6xl word-wrap w-3/4">Enquire on the app</p>
+			  <p class="text-2xl m-2">Connect to a delivery partner.</p>
+			</div>
+		  </div>
+	
+		  <div class="h-screen snap-start flex items-center">
+			<div>
+			  <p class="text-6xl word-wrap w-3/4">Confirm Delivery</p>
+			  <p class="text-2xl m-2">Get the package.</p>
+			</div>
+		  </div>
+
+		  <div class="h-screen snap-start flex items-center">
+			<div>
+			  <p class="text-6xl">Make the payment.</p>
+			  <p class="text-2xl m-2">One-Click, Hassle free.</p>
+			</div>
+		  </div>
+
+		  <div class="h-screen snap-start flex items-center">
+			<div>
+			  <p class="text-6xl">Thank the partner.</p>
+			  <p class="text-2xl m-2">Exchange goodbyes</p>
+			</div>
+		  </div>
+
+		  <div class="h-screen snap-start flex items-center">
+			<div>
+			  <p class="text-6xl">Scan the code.</p>
+			  <p class="text-2xl m-2">Join the revolution</p>
+			</div>
+		  </div>
+
+		</section>
+	
+		<!-- Fixed Right Section (Mockup Phone) -->
+		<section class="sticky top-2 self-start z-20 right-20">
+		  <div class="mockup-phone border-primary">
+			<div class="mockup-phone-camera"></div>
+	
+			<div id="phone-display" class="mockup-phone-display bg-color-sloth overflow-hidden">
+			  <!-- Horizontal Scroll Container -->
+			  <div id="scroll-track" class="flex h-full bg-color-sloth" style="width: 600%;">
+				<div class="w-full h-full flex items-center justify-center">
+				  <div><img src="./assets/pictures/logo.png"  style="filter: brightness(2) contrast(2) saturate(1) sepia(0.2) hue-rotate(-40deg);" alt=""></div>
+				</div>
+				<div class="w-full h-full flex items-center justify-center">
+				  <div><img src="./assets/pictures/hi2.png" alt=""></div>
+				</div>
+				<div class="w-full h-full flex items-center justify-center">
+					<div><img src="./assets/pictures/take.png" style="filter: brightness(2) contrast(2.2) saturate(1) sepia(0.2) hue-rotate(-40deg);" alt=""></div>
+				</div>
+				<div class="w-full h-full flex items-center justify-center">
+					<div><img src="./assets/pictures/payment2.png" style="filter: brightness(2) contrast(2.1) saturate(1) sepia(0.2) hue-rotate(-20deg);" alt=""></div>
+				</div>
+				<div class="w-full h-full flex items-center justify-center">
+					<div><img src="./assets/pictures/bye.png" alt=""></div>
+				</div>
+				<div class="w-full h-full flex items-center justify-center object-fit">
+					<div><img src="./assets/pictures/qr.png" class="w-48 h-48" alt=""></div>
+				  </div>
+			  </div>
+			</div>
+		  </div>
+		</section>
+	  </div>
+
+	  <!-- Footer -->
+	  <div id="footer" class="text-white bg-blue-950 justify-items-center flex">
+		<div class="m-24 p-24">
+			<p class="text-3xl">Hurry Up!</p>
+		<div class="grid grid-cols-2 gap-24 place-content-evenly">
+			<div class="text-3xl">
+				Join the revolution.
+				<div class="mt-6 p-4">
+					<fieldset class="fieldset w-full bg-base-200 border border-base-300 p-4 rounded-box">
+						<legend class="fieldset-legend">Enter your mail</legend>
+						<input type="text" class="input" placeholder="someone@example.com" />
+						<p class="fieldset-label"><br></p>
+					  </fieldset>
+				</div>
+				<div class="text-4xl mt-12">
+					See you there!
+				</div>
+			</div>
+			<div class="h-[20rem] w-full z-10 footer-image">
+				<img src="./assets/pictures/footer.png" alt="">
+			</div>
+		</div>
+		</div>
+	  </div>
+
+	  <!-- End Footer -->
+	  <footer id="about" class="footer sm:footer-horizontal bg-base-200 text-base-content p-4 bg-color-sloth bg-[url(./assets/pictures/logo.png)]">
+		<aside>
+		  LazyLegs.Inc
+		</aside>
+		<nav class="bg-[url(./assets/pictures/logo.png)]">
+		  <h6 class="footer-title">company@domain.com</h6>
+		</nav>
+		<nav>
+		  <h6 class="footer-title">S O U K A R Y O &nbsp; C H A N D R A</h6>
+		</nav>
+		<nav>
+		  <h6 class="footer-title">Developer</h6>
+		</nav>
+	  </footer>
+	
+	  <script src="./src/index.js"></script>
+
+ </body> 
+ </html>
