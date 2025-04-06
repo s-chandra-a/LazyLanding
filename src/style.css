@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@source "./*.{html,js}";
+@plugin "daisyui";
+
+:root {
+    --color-sloth: oklch(0.2 0.0815 265.18);
+}
+
+*::-webkit-scrollbar {
+    display: none;
+  }
+* {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#left-scroll::-webkit-scrollbar {
+    display: none;
+  }
+#left-scroll {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.bg-color-sloth {
+    background-color: var(--color-sloth);
+}
+
+.footer-image {
+    -webkit-mask-image: radial-gradient(circle at center, blue 60%, transparent 100%);
+    mask-image: radial-gradient(circle at center, blue 60%, transparent 100%);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+  }

@@ -1,0 +1,7 @@
+#left-scroll::-webkit-scrollbar {
+    display: none;
+  }
+#left-scroll {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
